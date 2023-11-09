@@ -1,0 +1,92 @@
+#logo{
+    width:150px;
+}
+
+.mainPage{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    height:100vh;
+}
+
+.recommendRecipe{
+    display:flex;
+    flex-direction:column;
+    width:80vh;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+    margin:40px;
+
+}
+
+.foodTypeSection{
+    width:80vh;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+    margin:40px;
+
+}
+
+.cookingMethodSection{
+    width:80vh;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+    margin:40px;
+
+}
+
+.searchRecipe{
+    width:80vh;
+    margin:20px;
+    text-align:center;
+
+}
+
+#recipe{
+    text-align:center;
+    border-style:solid;
+    border-width:0px 0px 1px 0px;
+    padding:10px;
+}
+
+.recommendImg{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#recommendImg{
+    width:50%;
+    height:auto;
+}
+.recommendName{
+    font-size:30px;
+    font-weight:bold;
+    margin-left: 20px;
+}
+
+#searchInput{
+    border-width:1px;
+    position:relative;
+    width:80%;
+    height:30px;
+    margin:5px;
+    background:
+    rgb(237, 235, 235);
+}
+
+#imageArr{
+    display:flex;
+    justify-content: space-evenly;
+
+}
+.typeImg{
+    width:20%;
+    margin:10px;
+}
+
