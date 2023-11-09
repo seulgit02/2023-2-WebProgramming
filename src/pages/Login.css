@@ -1,0 +1,60 @@
+.loginPage{
+    display:flex;
+    flex-direction:column;/*요소들 세로로 쌓이게*/
+    justify-content:center;/*세로방향으로 가운데 정렬*/
+    align-items:center;/*가로방향으로 가운데 정렬*/
+    
+}
+
+.loginFooter{
+    margin:30px;
+    text-align:center;
+    align-items: center;
+}
+#login{
+    text-align: center;
+    font-size:30px;
+}
+
+#loginSection{
+    border-color:black;
+    border-style: double;
+    border-radius:10px;
+    width:80%;
+    height:50vh;
+}
+
+#loginForm{
+    text-align: center;
+    margin:50px;
+    
+}
+
+input{
+    position:relative;
+    width:90%;
+    height:30px;
+    margin:5px;
+    background:
+    rgb(237, 235, 235);
+}
+
+#loginBtn{
+    font-weight:bold;
+    border-radius:20px;
+    width:150px;
+    height:40px;
+    background-color: deepskyblue;
+    margin:70px 0 0 0;
+}
+
+#search{
+    font-weight:bolder;
+    border-style:none;
+    background-color:white;
+    font-size:20px;
+}
+
+#logo{
+    width:150px;
+}
