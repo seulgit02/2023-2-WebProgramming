@@ -1,94 +1,120 @@
+body, html{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+.banner{
+    height:5vw;
+}
+
 #logo{
-    width:150px;
+    width: 20vw;
+    min-height:5vw;
 }
 
-.mainPage{
+#recommendFood{
+    width: 30vw;
+    border-radius: 0vw 2vw 2vw 0vw;
+
+}
+
+.recommend{
+    display:flex;
+    flex-direction:row;
+    background: #FFB30E;
+    height:20vw;
+}
+
+p{
+    font-size:1.5vw;
+    margin:1vw;
+    width:100%;
+}
+
+.recommendText{
+    min-width:60vw;
+    padding: 0vw 3vw 0vw 3vw;
     display:flex;
     flex-direction:column;
+    justify-content:center;
     align-items:center;
-    width:100%;
-    height:100vh;
+    margin: 0vw 20vw 0vw 20vw;
+    font-size: 5vw;
 }
 
-.recommendRecipe{
+#tagImg{
+    width: 20vw;
+}
+
+.search{
+    padding: 3vw;
     display:flex;
-    flex-direction:column;
-    width:70%;
-    border-style:solid;
-    border-width: 1px;
-    border-color: black;
-    margin:40px;
-
-}
-
-.foodTypeSection{
-    width:70%;
-    border-style:solid;
-    border-width: 1px;
-    border-color: black;
-    margin:40px;
-
-}
-
-.cookingMethodSection{
-    width:70%;
-    border-style:solid;
-    border-width: 1px;
-    border-color: black;
-    margin:40px;
-
-}
-
-.searchRecipe{
-    width:100%;
-    margin:20px;
-    text-align:center;
-
-}
-
-
-
-#recipe{
-    text-align:center;
-    border-style:solid;
-    border-width:0px 0px 1px 0px;
-    padding:10px;
-}
-
-.recommendImg{
-    display:flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-
 }
 
-#recommendImg{
-    width:50%;
-    height:auto;
-}
-.recommendName{
-    font-size:30px;
-    font-weight:bold;
-    margin-left: 20px;
+select{
+    font-size:2vw;
+    height: 4vw;
+    border-radius: 1vw;
+    border-style:none;
+    background-color:#E4E4E4 ;
+    margin:auto;
 }
 
 #searchInput{
-    border-width:1px;
-    position:relative;
-    width:80%;
-    height:30px;
-    margin:5px;
-    background:
-    rgb(237, 235, 235);
+    width:65vw;
+    height: 4vw;
+    border-radius: 1vw;
+    border-style:none;
+    background-color:#E4E4E4 ;
+    margin:auto;
 }
 
-#imageArr{
+#searchImg{
+    width: 2vw;
+}
+
+#searchBtn{
+    font-size: 2vw;
     display:flex;
-    justify-content: space-evenly;
-
+    align-items:center;
+    height: 4vw;
+    border-radius: 1vw;
+    border-style:none;
+    background-color: #F47249;
+    margin:auto;
 }
-.typeImg{
-    width:20%;
-    margin:10px;
+
+#tag{
+    font-size: 2vw;
+    font-weight:bold;
+    margin:0vw 0vw 2vw 0vw;
+}
+
+#menuType{
+    background-color:transparent;
+    border-style:none;
+}
+
+.tagSearch{
+    margin:2vw;
+}
+#starve{
+    font-size: 2.5vw;
+    font-weight:bold;
+    color:white;
+}
+
+#today{
+    font-size: 2.5vw;
+    font-weight:bold;
+    color:#ea4c1c;
+
+} 
+
+#ment{
+    font-size: 2.5vw;
+    font-weight:bold;
 }
 
