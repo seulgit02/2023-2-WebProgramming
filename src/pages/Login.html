@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./Login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="Login.css">
+    <title>로그인 페이지</title>
 </head>
 <body>
-    <div class="loginPage">
-    <header class="title">
-        <img id="logo" src="../image/logo.png" alt="로고사진">
-    </header>
-    <section id="loginSection">
-        <h1 id="login">로그인 페이지입니다.</h1>
-        <form id="loginForm">
-            <label for="ID">ID</label>
-            <input type="text" id="ID" placeholer="아이디"/><br>
-            <label for="PW">PW</label>
-            <input type="password" id="PW" placeholdr="비밀번호"><br>
-            <input type="submit" id="loginBtn" value="로그인"/>
-        </form>
-    </section>
-    <footer class="loginFooter">
-    <button id="search">PW찾기</button> | <button id="search">ID찾기</button> | <button id="search">회원가입</button>
+    <div class="loginComponent">
+    <div class="banner">
+        <img id="logo" src="../image/logo.png" />
     </div>
-    </footer>
+    <div class="loginPage">
+        <div class="innerBox">
+            <img id ="shef" src="../image/shef.png" alt="shef"/>
+            <div class="loginBox">
+                <div id="welcome">Welcome!</div>
+                
+                <form class="loginForm" action="dummy" method="POST">
+                  
+                    <input id="loginInput" type="text" name="id" placeholder="Enter your ID"/><br>
+                    
+                    <input id="loginInput" type="text" name="pw" placeholder="Enter your PW"/><br>
+                    <button id="loginBtn">LOG IN</button>
+                </form>
+                <div class="footer">
+                    <button>ID 찾기</button><t><button>PW 찾기</button><t><button>회원가입</button> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
 </body>
 </html>

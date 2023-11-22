@@ -13,7 +13,7 @@
 .recommendRecipe{
     display:flex;
     flex-direction:column;
-    width:80vh;
+    width:70%;
     border-style:solid;
     border-width: 1px;
     border-color: black;
@@ -22,7 +22,7 @@
 }
 
 .foodTypeSection{
-    width:80vh;
+    width:70%;
     border-style:solid;
     border-width: 1px;
     border-color: black;
@@ -31,7 +31,7 @@
 }
 
 .cookingMethodSection{
-    width:80vh;
+    width:70%;
     border-style:solid;
     border-width: 1px;
     border-color: black;
@@ -40,11 +40,13 @@
 }
 
 .searchRecipe{
-    width:80vh;
+    width:100%;
     margin:20px;
     text-align:center;
 
 }
+
+
 
 #recipe{
     text-align:center;

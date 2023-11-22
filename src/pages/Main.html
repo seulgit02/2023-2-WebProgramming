@@ -20,7 +20,11 @@
     </div>
     <div class="searchRecipe">
         <form id="searchRecipe" action="">
-            <input id="searchInput" type="text" placeholder="검색">
+            <select id="searchOption" name="selectOption">
+                <option value="ingredient">재료</option>
+                <option value="menu">메뉴명</option>
+            </select>
+            <input id="searchInput" type="text" placeholder="재료/메뉴명 옵션을 선택 후 입력하세요">
             <button id="searchBtn">검색</button>
         </form>
     </div>

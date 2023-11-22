@@ -1,60 +1,94 @@
+/*media query*/
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.loginComponent{
+    width:100vw;
+    height:50vw;
+}
 .loginPage{
     display:flex;
-    flex-direction:column;/*요소들 세로로 쌓이게*/
-    justify-content:center;/*세로방향으로 가운데 정렬*/
-    align-items:center;/*가로방향으로 가운데 정렬*/
-    
+    align-items:center;
+    justify-content: center;
+    background: #FFB30E;
 }
-
-.loginFooter{
-    margin:30px;
-    text-align:center;
-    align-items: center;
-}
-#login{
-    text-align: center;
-    font-size:30px;
-}
-
-#loginSection{
-    border-color:black;
-    border-style: double;
-    border-radius:10px;
-    width:80%;
-    height:50vh;
-}
-
-#loginForm{
-    text-align: center;
-    margin:50px;
-    
-}
-
-input{
-    position:relative;
-    width:90%;
-    height:30px;
-    margin:5px;
-    background:
-    rgb(237, 235, 235);
-}
-
-#loginBtn{
-    font-weight:bold;
-    border-radius:20px;
-    width:150px;
-    height:40px;
-    background-color: deepskyblue;
-    margin:70px 0 0 0;
-}
-
-#search{
-    font-weight:bolder;
-    border-style:none;
+.innerBox{
+    display:flex;
+    flex-direction:row;
+    width:65vw;
+    height:30vw;
+    margin: 5% 0%;
+    border-radius: 5px;
     background-color:white;
-    font-size:20px;
+}
+
+.loginBox{
+    box-sizing: border-box;
+  
+    margin:5vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+
+}
+
+.banner{
+    height:5vw;
 }
 
 #logo{
-    width:150px;
+    width: 20vw;
+    min-height:5vw;
 }
+
+#shef{
+    width: 40%;
+    height:100%;
+
+}
+
+.loginForm{
+    display:flex;
+    flex-direction: column;
+}
+
+#loginInput{
+    background-color: #D9D9D9;
+    border-style: none;
+    border-radius: 5px;
+    min-width: 30vw;
+    min-height:3vw;
+}
+
+#loginBtn{
+    background:#F47249;
+    margin:auto;
+    width: 10vw;
+    height: 3vw;
+    border-style: none;
+    border-radius: 5%;
+}
+
+button{
+    font-size:1vw;
+    background-color:transparent;
+    border-style:none;
+}
+
+#welcome{
+    align-self: start;
+    font-size:2vw;
+    margin: 0 0 1vw 0;
+}
+
+.footer{
+    margin:auto;
+    font-weight:bold;
+}
+
+/*gpt*/
+
+
+
