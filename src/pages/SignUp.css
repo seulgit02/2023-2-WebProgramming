@@ -1,0 +1,62 @@
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.SignUpPage{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#shefImg{
+    width:30vw;
+}
+
+.signupBox{
+    display:flex;
+    flex-direction: column;
+    background: #FFB30E;
+    padding: 5%;
+    justify-content:center;
+    align-items:center;
+}
+
+#signupInput{
+    font-size:1.6vw;
+    margin: 0vw 0vw 1vw 0vw;
+    background-color: #fbfbfb;
+    border-style: none;
+    border-radius: 5px;
+    min-width: 38vw;
+    min-height:3.8vw;
+}
+
+#signupBtn{
+    font-size:2vw;
+    background:#F47249;
+    margin:0% 30%;
+    width: 12vw;
+    height: 4vw;
+    border-style: none;
+    border-radius: 1vw;
+    box-shadow: 2px 2px 1px #666;
+}
+
+.loginForm{
+    display:flex;
+    justify-content:center;
+}
+
+.banner{
+    height:5vw;
+}
+
+#logo{
+    width: 20vw;
+    min-height:5vw;
+}
+
+#createaccount{
+    font-size:3vw;
+    margin:0vw 0vw 2vw 0vw;
+}
