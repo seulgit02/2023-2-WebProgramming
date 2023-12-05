@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./searchView.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="module">
+    fetch('../json/recommend.json')
+    .then(response=>response.json())
+    .then(data=>console.log(data))
+    .catch(console.error);
+</script>
+<body>
+    <div class="main">
+        <div class="banner">
+            <img id="logo" src="../image/logo.png" />
+        </div>
+        <div class="loginUser">
+            <button id="logout">log out</button><t></t>
+            <button id="keep">찜 목록</button>
+        </div>
+        <div class="title">
+            Search View
+        </div>
+        <div class="username"><b>홍길동</b>님, 안녕하세요!</div>
+        <div class="search">
+            <select>
+                <option name="ingredient">재료</option>
+                <option name="menu">메뉴명</option>
+            </select>
+            <input id="searchInput" type="text" name="searchRecipe" />
+            <button id="searchBtn">
+                <img id="searchImg" src="../image/search.png"/>Search
+
+            </button>
+        </div>
+        
+        <div class="likelist">
+        <div class="tagSearch">
+            <div id="tag">Search for {  Kimchi  }</div>
+            <div id="tagIcon">
+                <button id="menuType">
+                    <img id="tagImg" src="../image/rice.png" alt="#밥" />
+                    <p>김치볶음밥</p>
+                </button>
+                <button id="menuType">
+                    <img id="tagImg" src="../image/soup.png" alt="#국" />
+                    <p>김치찌개</p>
+                </button>
+                <button id="menuType">
+                    <img id="tagImg" src="../image/sidedish.png" alt="#반찬" />
+                    <p>김치전</p>
+                </button>
+                <button id="menuType">
+                    <img id="tagImg" src="../image/dessert.png" alt="#후식" />
+                    <p>배추김치</p>
+                </button>
+            </div>
+
+            <div id="tagIcon">
+                <button id="menuType">
+                    <img id="tagImg" src="../image/boil.png" alt="#끓이기" />
+                    <p>김치김밥</p>
+                </button>
+                <button id="menuType">
+                    <img id="tagImg" src="../image/bake.png" alt="#굽기" />
+                    <p>김치찌개</p>
+                </button>
+                <button id="menuType">
+                    <img id="tagImg" src="../image/fry.png" alt="#튀기기" />
+                    <p>김치우동</p>
+                </button>
+                <button id="menuType">
+                    <img id="tagImg" src="../image/etc.png" alt="#기타" />
+                    <p>#기타</p>
+                </button>
+            </div>
+        </div>
+        </div>
+
+
+      
+    </div>
+    
+</body>
+</html>

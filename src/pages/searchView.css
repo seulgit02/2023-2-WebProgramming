@@ -1,0 +1,168 @@
+body, html{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+.banner{
+    height:5vw;
+}
+
+#logo{
+    width: 20vw;
+    min-height:5vw;
+}
+
+.title{
+    margin: 5vw;
+    font-size: 5vw;
+    color:#F17228;
+    font-weight:bold;
+    text-align:center;
+}
+
+#recommendFood{
+    width: 30vw;
+    border-radius: 0vw 2vw 2vw 0vw;
+
+}
+
+.recommend{
+    display:flex;
+    flex-direction:row;
+    background: #FFB30E;
+    height:20vw;
+}
+
+p{
+    font-size:2vw;
+    font-weight:bold;
+    margin:1vw;
+    width:100%;
+}
+
+.recommendText{
+    min-width:60vw;
+    padding: 0vw 3vw 0vw 3vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin: 0vw 20vw 0vw 20vw;
+    font-size: 5vw;
+}
+
+#tagImg{
+    width: 18vw;
+}
+
+.search{
+    padding: 3vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+select{
+    font-size:2vw;
+    height: 4vw;
+    border-radius: 1vw;
+    border-style:none;
+    background-color:#E4E4E4 ;
+    margin:auto;
+}
+
+#searchInput{
+    width:65vw;
+    height: 4vw;
+    border-radius: 1vw;
+    border-style:none;
+    background-color:#E4E4E4 ;
+    margin:auto;
+}
+
+#searchImg{
+    width: 2vw;
+}
+
+#searchBtn{
+    font-size: 2vw;
+    display:flex;
+    align-items:center;
+    height: 4vw;
+    border-radius: 1vw;
+    border-style:none;
+    background-color: #F47249;
+    margin:auto;
+}
+
+#tag{
+    font-size: 2vw;
+    font-weight:bold;
+    margin:0vw 0vw 2vw 0vw;
+}
+
+#menuType{
+    background-color:transparent;
+    border-style:none;
+}
+
+.likelist{
+    margin:3vw;
+    padding: 2vw;
+    background-color:#FFB30E;
+}
+#starve{
+    font-size: 2.5vw;
+    font-weight:bold;
+    color:white;
+}
+
+#today{
+    font-size: 2.5vw;
+    font-weight:bold;
+    color:#ea4c1c;
+
+} 
+
+#ment{
+    font-size: 2.5vw;
+    font-weight:bold;
+}
+
+
+.loginUser{
+    height: 4vw;
+    display:flex;
+    justify-content: right;
+    padding:0% 5% 0% 0%;
+}
+#logout{
+    width: 10vw;
+    height:4vw;
+    background-color: #D9D9D9;  
+    border-radius: 1vw;
+    border-style:none;
+    padding: 1vw 1.5vw;
+    margin:1vw;
+    font-size:2vw;
+}
+
+#keep{
+    width: 10vw;
+    height:4vw;
+  background-color: #A4C8FF;  
+  border-radius: 1vw;
+  border-style:none;
+  font-weight:bold;
+  padding: 1vw 1.5vw;
+  margin:1vw;
+  font-size:2vw;
+}
+
+.username{
+    display:flex;
+    justify-content: right;
+    font-size:2vw;
+    margin:auto;
+    padding:0% 5% 0% 0%;
+}
