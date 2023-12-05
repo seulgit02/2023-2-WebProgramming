@@ -1,0 +1,107 @@
+body, html{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+.banner{
+    height:5vw;
+}
+
+#logo{
+    width: 20vw;
+    min-height:5vw;
+}
+
+.title{
+    height: 20vw;
+    margin: 5vw 0vw;
+    font-size: 4vw;
+    background-color:#FFB30E;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#keepImg{
+    width: 24vw;
+}
+
+
+
+
+
+.loginUser{
+    height: 4vw;
+    display:flex;
+    justify-content: right;
+    padding:0% 5% 0% 0%;
+}
+
+#logout{
+    width: 10vw;
+    height:4vw;
+    background-color: #D9D9D9;  
+    border-radius: 1vw;
+    border-style:none;
+    padding: 1vw 1.5vw;
+    margin:1vw;
+    font-size:2vw;
+}
+
+#keep{
+    width: 10vw;
+    height:4vw;
+  background-color: #A4C8FF;  
+  border-radius: 1vw;
+  border-style:none;
+  font-weight:bold;
+  padding: 1vw 1.5vw;
+  margin:1vw;
+  font-size:2vw;
+}
+
+#basket{
+    width: 5vw;
+}
+
+#recipe{
+    background:transparent;
+    border-style:none;
+}
+
+.x{
+    background-color: #D9D9D9;
+    border-style:none;
+    color:white;
+    font-weight:bold;
+    border-radius: 50%;
+}
+
+.keepname{
+    margin: 0vw 0vw 3vw 0vw;
+    width: 24vw;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.keepIcon{
+    padding: 2vw;
+    width:30vw;
+    margin:auto;
+}
+
+#recipename{
+    width: 18vw;
+    font-size:3vw;
+    padding: 0vw 0vw 0vw 3vw;
+}
+
+.keeplist{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:3vw 0vw;
+    
+}

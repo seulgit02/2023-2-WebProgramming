@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./mypage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="module">
+    fetch('../json/recommend.json')
+    .then(response=>response.json())
+    .then(data=>console.log(data))
+    .catch(console.error);
+</script>
+<body>
+    <div class="main">
+        <div class="banner">
+            <img id="logo" src="../image/logo.png" />
+        </div>
+        <div class="loginUser">
+            <button id="logout">log out</button><t></t>
+            <button id="keep">찜 목록</button>
+        </div>
+        <div class="title">
+            <img id="basket" src="../image/basket.png" alt="basket" />
+            <span><b>홍길동</b>님의 찜 목록 리스트</span>
+            <img id="basket" src="../image/basket.png" alt="basket" />
+        </div>
+        
+        
+        <div class="keeplist">
+
+            <div class="keepIcon">
+                <button id="recipe">
+                    <img id="keepImg" src="../image/rice.png" alt="#밥" />
+                </button>
+                <div class="keepname">
+                    <div id="recipename"><b>오므라이스</b></div><button class="x">x</button>
+                </div>
+              
+            </div>
+
+            <div class="keepIcon">
+                <button id="recipe">
+                    <img id="keepImg" src="../image/rice.png" alt="#밥" />
+                </button>
+                <div class="keepname">
+                    <div id="recipename"><b>오므라이스</b></div><button class="x">x</button>
+                </div>
+              
+            </div>
+
+            <div class="keepIcon">
+                <button id="recipe">
+                    <img id="keepImg" src="../image/rice.png" alt="#밥" />
+                </button>
+                <div class="keepname">
+                    <div id="recipename"><b>오므라이스</b></div><button class="x">x</button>
+                </div>
+              
+            </div>
+
+            <div class="keepIcon">
+                <button id="recipe">
+                    <img id="keepImg" src="../image/rice.png" alt="#밥" />
+                </button>
+                <div class="keepname">
+                    <div id="recipename"><b>오므라이스</b></div><button class="x">x</button>
+                </div>
+              
+            </div>
+
+            <div class="keepIcon">
+                <button id="recipe">
+                    <img id="keepImg" src="../image/rice.png" alt="#밥" />
+                </button>
+                <div class="keepname">
+                    <div id="recipename"><b>오므라이스</b></div><button class="x">x</button>
+                </div>
+              
+            </div>
+
+            <div class="keepIcon">
+                <button id="recipe">
+                    <img id="keepImg" src="../image/rice.png" alt="#밥" />
+                </button>
+                <div class="keepname">
+                    <div id="recipename"><b>오므라이스</b></div><button class="x">x</button>
+                </div>
+              
+            </div>
+
+        </div>
+
+
+      
+    </div>
+    
+</body>
+</html>
