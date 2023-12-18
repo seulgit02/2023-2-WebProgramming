@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Data</title>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <div id="recipes"></div>
+
+    <script>
+        // 인증키와 기타 필요한 정보를 포함한 API URL 구성
+        const apiKey = '0e3086377acf458ab61d'; // 여기에 인증키를 넣습니다.
+        const serviceId = 'COOKRCP01'; // 서비스 ID를 설정합니다.
+        const dataType = 'xml'; // 데이터 타입을 설정합니다. (예: 'xml', 'json')
+        const startIdx = '1'; // 시작 인덱스
+        const endIdx = '10'; // 종료 인덱스
+
+        const apiUrl = `http://openapi.foodsafetykorea.go.kr/api/${apiKey}/${serviceId}/${dataType}/${startIdx}/${endIdx}`;
+
+        fetch(apiUrl,{
+            mode:'no-cors'
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text(); // XML 응답을 처리하기 위해 text() 사용
+            })
+            .then(data => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, "text/xml");
+
+                const recipesElement = document.getElementById('recipes');
+
+                // XML에서 필요한 정보 추출
+                const rows = xmlDoc.getElementsByTagName('row');
+                for (let i = 0; i < rows.length; i++) {
+                    const recipeName = rows[i].getElementsByTagName('RCP_NM')[0].textContent;
+                    const imageUrl = rows[i].getElementsByTagName('ATT_FILE_NO_MK')[0].textContent;
+                    const ingredients = rows[i].getElementsByTagName('RCP_PARTS_DTLS')[0].textContent;
+                    const calories = rows[i].getElementsByTagName('INFO_ENG')[0].textContent;
+
+                    // 웹 페이지에 렌더링
+                    const recipeDiv = document.createElement('div');
+                    recipeDiv.innerHTML = `
+                        <h2>${recipeName}</h2>
+                        <img src="${imageUrl}" alt="Food Image" width="300">
+                        <p>Ingredients: ${ingredients}</p>
+                        <p>Calories: ${calories}</p>
+                    `;
+                    recipesElement.appendChild(recipeDiv);
+                }
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+    </script>
+</body>
+</html>

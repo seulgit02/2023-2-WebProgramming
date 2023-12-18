@@ -1,6 +1,17 @@
+@charset "EUC-KR";
 body, html{
     max-width:100%;
     overflow-x:hidden;
+}
+
+p{
+	font-size:17px;
+}
+
+
+.rootComponent{
+    width:100vw;
+    height:auto;
 }
 
 .banner{
@@ -12,30 +23,24 @@ body, html{
     min-height:5vw;
 }
 
-.title{
-    margin: 5vw;
-    font-size: 5vw;
-    color:#F17228;
-    font-weight:bold;
-    text-align:center;
-}
-
 #recommendFood{
-    width: 30vw;
+    width: 20vw;
+    max-height:100%;
     border-radius: 0vw 2vw 2vw 0vw;
-
+	object-fit: cover;
 }
 
 .recommend{
+	margin:5vw 0% 0% 0%;
     display:flex;
     flex-direction:row;
     background: #FFB30E;
+    
     height:20vw;
 }
 
 p{
-    font-size:2vw;
-    font-weight:bold;
+    font-size:1.5vw;
     margin:1vw;
     width:100%;
 }
@@ -52,7 +57,7 @@ p{
 }
 
 #tagImg{
-    width: 18vw;
+    width: 20vw;
 }
 
 .search{
@@ -77,7 +82,7 @@ select{
     border-radius: 1vw;
     border-style:none;
     background-color:#E4E4E4 ;
-    margin:auto;
+    margin:0% 2%;
 }
 
 #searchImg{
@@ -85,6 +90,7 @@ select{
 }
 
 #searchBtn{
+	max-width:20%;
     font-size: 2vw;
     display:flex;
     align-items:center;
@@ -92,7 +98,7 @@ select{
     border-radius: 1vw;
     border-style:none;
     background-color: #F47249;
-    margin:auto;
+    margin:0% 0% 0% 2%;
 }
 
 #tag{
@@ -106,10 +112,8 @@ select{
     border-style:none;
 }
 
-.likelist{
-    margin:3vw;
-    padding: 2vw;
-    background-color:#FFB30E;
+.tagSearch{
+    margin:2vw;
 }
 #starve{
     font-size: 2.5vw;
@@ -129,13 +133,15 @@ select{
     font-weight:bold;
 }
 
-
 .loginUser{
     height: 4vw;
     display:flex;
     justify-content: right;
     padding:0% 5% 0% 0%;
+    margin:5vw 0% 0% 0%;
+    
 }
+
 #logout{
     width: 10vw;
     height:4vw;
@@ -159,10 +165,15 @@ select{
   font-size:2vw;
 }
 
-.username{
-    display:flex;
-    justify-content: right;
-    font-size:2vw;
-    margin:auto;
-    padding:0% 5% 0% 0%;
+
+form{
+	display:flex;
+	flex-direction:row;
 }
+
+#tagIcon{
+	display:flex;
+	justify-content:center;
+}
+
+

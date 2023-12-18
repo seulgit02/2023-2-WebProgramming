@@ -1,0 +1,36 @@
+@charset "EUC-KR";
+.recipeBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #FFB30E;
+    
+    
+}
+.shell {
+    max-width:25%;
+    margin: 10px; 
+    text-align: center; 
+    max-height:27%;
+}
+.shell img {
+    width: 100%;
+    height: auto; 
+}
+
+h3{
+	margin: 0% 0% 2% 20%; 
+	
+}
+
+#keep2{
+    width: 10vw;
+    height:4vw;
+  background-color: rgb(255, 128, 255);  
+  border-radius: 1vw;
+  border-style:none;
+  font-weight:bold;
+  padding: 1vw 1.5vw;
+  margin:1vw;
+  font-size:2vw;
+}

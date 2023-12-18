@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Introduction</title>
+</head>
+<script type="module">
+    fetch('../json/dummyData.json')
+    .then(response => response.json())
+    .then(data => {
+        const mainDiv = document.querySelector('.main');
+        mainDiv.innerHTML = `
+            <h1>${data.name}</h1>
+            <img src="${data.img_s}" alt="${data.name}" />
+            <p>Type: ${data.type}</p>
+            <p>Ingredients: ${data.ingre}</p>
+            <p>How to cook: ${data.how}</p>
+        `;
+    })
+    .catch(console.error);
+</script>
+<body>
+    <div class="main">
+        <!-- Recipe details will be inserted here by the JavaScript -->
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes Display</title>
+</head>
+<body>
+    <h1>레시피 상세정보</h1>
+    <div id="recipes-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                fetch(baseURL, {
+                    method: 'GET', // HTTP 메소드 지정
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    credentials: 'include' // 쿠키를 포함시키기 위해
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('recipes-container');
+                    data.forEach(recipe => {
+                        const recipeElement = document.createElement('div');
+                        recipeElement.innerHTML = `
+                            <h2>메뉴명: ${recipe.name}</h2>
+                            <img src="${recipe.img_s}" alt="${recipe.name}" width="300">
+                            <p>요리 종류: ${recipe.type}</p>
+                            <p>재료 정보: ${recipe.ingre}</p>
+                            <p>조리 방법: ${recipe.how}</p>
+                        `;
+                        container.appendChild(recipeElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching recipes:', error);
+                });
+        });
+    </script>
+</body>
+</html> -->
