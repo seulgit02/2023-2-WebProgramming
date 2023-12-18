@@ -93,12 +93,12 @@
         pstmt.close();
         rs.close();
     	String[] numArray = bookmark_list.split(",");
-    	query = "SELECT type, img_s FROM recipe_info WHERE recipeid = ";
+    	    	query = "SELECT type, img_s FROM recipe_info WHERE recipeid IN (";
     	for(int i = 0; i< numArray.length - 1; i++)
     	{
-    		query += numArray[i] + " OR ";
+    		query += "'" + numArray[i] + "',";
     	}
-    	query += numArray[numArray.length-1];
+    	query += "'" + numArray[numArray.length-1] + "')";
         pstmt = con.prepareStatement(query);
         rs = pstmt.executeQuery();
 		
