@@ -1,0 +1,88 @@
+@charset "EUC-KR";
+body{
+	font-size: 15px;
+}
+#login{
+	width: 10vw;
+    height:4vw;
+    background-color: rgb(255, 128, 255);  
+    border-radius: 1vw;
+    border-style:none;
+    padding: 1vw 1.5vw;
+    margin:1vw;
+    font-size:2vw;
+	
+}
+#Main{
+	
+	width: 10vw;
+    height:4vw;
+    background-color: rgb(128, 255, 128);  
+    border-radius: 1vw;
+    border-style:none;
+    padding: 1vw 1.5vw;
+    margin:1vw;
+    font-size:2vw;
+	
+
+}
+#bookmark{
+	width:12vw;
+	font-size:1.5vw;
+	border-radius:1vw;
+	border-style:none;
+	background-color:greenyellow;
+}
+#name{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	font-size:3vw;
+	font-weight:bold;
+	text-align:center;
+	background-color:#FFB30E;
+	margin:4% 0% 2% 0%;
+	padding: 3%;
+}
+
+.ingre{
+	font-size:2.5vw;
+	font-weight:bold;
+	text-align:center;
+}
+
+.recipeBox{
+	margin: 3%;
+}
+
+.manualBox{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+}
+
+.manualBox img {
+    display: block; 
+    margin: auto; 
+}
+
+
+img{
+	width:35vw;
+	border-radius:2vw;
+}
+
+p{
+	margin:2em;
+	font-size:1.5vw;
+}
+#new{
+	width:100%;
+	margin:0% 30vw;
+}
+#heart{
+	
+	max-width: 7vw;
+	
+}
+

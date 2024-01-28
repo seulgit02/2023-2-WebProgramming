@@ -1,0 +1,163 @@
+@charset "EUC-KR";
+body, html{
+    max-width:100%;
+    overflow-x:hidden;
+}
+p{
+	font-size:17px;
+}
+
+.banner{
+    height:5vw;
+}
+
+#logo{
+    width: 20vw;
+    min-height:5vw;
+}
+
+.title{
+    height: 10vw;
+    margin: 5vw 0vw;
+    font-size: 3vw;
+    background-color:#FFB30E;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#keepImg{
+    width: 24vw;
+}
+
+
+
+
+
+.loginUser{
+    height: 4vw;
+    display:flex;
+    justify-content: right;
+    padding:0% 5% 0% 0%;
+}
+
+#logout{
+    width: 10vw;
+    height:4vw;
+    background-color: #D9D9D9;  
+    border-radius: 1vw;
+    border-style:none;
+    padding: 1vw 1.5vw;
+    margin:1vw;
+    font-size:2vw;
+}
+
+#keep{
+    width: 10vw;
+    height:4vw;
+  background-color: #A4C8FF;  
+  border-radius: 1vw;
+  border-style:none;
+  font-weight:bold;
+  padding: 1vw 1.5vw;
+  margin:1vw;
+  font-size:2vw;
+}
+#keep2{
+    width: 10vw;
+    height:4vw;
+  background-color: rgb(255, 128, 255);  
+  border-radius: 1vw;
+  border-style:none;
+  font-weight:bold;
+  padding: 1vw 1.5vw;
+  margin:1vw;
+  font-size:2vw;
+}
+#basket{
+    width: 5vw;
+}
+
+#recipe{
+    background:transparent;
+    border-style:none;
+}
+
+.x{
+    background-color: #D9D9D9;
+    border-style:none;
+    color:white;
+    font-weight:bold;
+    border-radius: 50%;
+}
+
+.keepname{
+    margin: 0vw 0vw 3vw 0vw;
+    width: 24vw;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.keepIcon{
+    padding: 2vw;
+    width:30vw;
+    margin:auto;
+}
+
+#recipename{
+    width: 18vw;
+    font-size:3vw;
+    padding: 0vw 0vw 0vw 3vw;
+}
+
+.keeplist{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:3vw 0vw;
+    
+}
+
+
+/*찜 목록 정렬 예쁘게*/
+.keeplist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3vw 0;
+}
+
+.keeplist .shell {
+    width: calc(33.333% - 2vw); /* 한 줄에 3개의 아이템을 균등하게 분배 */
+    margin-bottom: 3vw; /* 아이템 간의 상하 간격 */
+    text-align: center; /* 이미지와 텍스트 중앙 정렬 */
+}
+
+.keeplist img {
+    max-width: 100%; /* 이미지가 shell 요소를 넘지 않도록 */
+    height: auto; /* 이미지 비율 유지 */
+    display: block; /* 블록 레벨 요소로 만들어 줄바꿈 확보 */
+    margin-bottom: 1vw; /* 이미지와 텍스트 사이의 간격 */
+}
+
+.keeplist a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: inherit; /* 부모 요소의 글자 색상 상속 */
+}
+
+/* 로그인 및 로그아웃 버튼 스타일 조정 */
+#login, #logout {
+    margin: 1vw; /* 버튼 주변 여백 */
+    padding: 0.5vw 1vw; /* 버튼 내부 패딩 */
+    font-size: 1vw; /* 글자 크기 조정 */
+    border-radius: 0.5vw; /* 버튼 모서리 둥글게 */
+}
+
+/* 버튼 호버 효과 추가 */
+#login:hover, #logout:hover {
+    background-color: #f2f2f2; /* 호버 시 배경색 변경 */
+}
+
+/* 기존 CSS 스타일이 더 있을 수 있으니, 새로운 스타일을 적절히 통합해야 합니다. */
