@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+주제: 1인가구를 위한 레시피 추천 웹사이트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. 사이트 맵
+   1인가구를 위한 레시피 추천 웹사이트. 자취생을 위한 레시피 추천 웹사이트로, 모든 레시피는 1인분 기준으로 제공됨.
+   요리재료가 항상 남아도는 1인 자취생을 위해 메뉴명뿐만 아니라 재료명을 검색해 관련 레시피를 찾아볼 수 있도록 기능을 제공함.
+   시작페이지인 메인페이지 접속 시, 로그인 없이 접속 및 레시피 검색 및 조회 가능.
+   사용자 로그인을 통해 로그아웃 -> 로그인 화면으로 전환되면 레시피 찜하기 기능 이용 가능.
+   마이페이지에서 찜한 레시피 목록 확인 가능.
+   ![image](https://github.com/seulgib/2023-2-WebProgramming/assets/126848494/745684ef-ca01-4cc0-b3be-e17d975af54f)
+3. 페이지 소개
+2-1) 메인 페이지
+   클릭하면 홈페이지 메인으로 돌아갈 수 있는 홈페이지 이름, 로그인 버튼, 무작위 음식을 추천하는 오늘의 추천 메뉴, 검색 키워드를 재료 또는 음식 이름으로 선택해 검색할 수 있는 검색창, 밥/국/반찬 등의 음식 종류와 끓이기, 굽기 등의 조리 방법에 따라 음식 레시피를 찾아볼 수 있게 해주는 부분으로 이루어져 있음.
+   추천 메뉴 란에 시간에 따라 다른 음식의 이미지와 이름을 나타나게 해 사용자에게 레시피를 추천해줌.(이미지를 클릭해 레시피 설명 페이지로 진입)
+ 검색창에 재료 이름 또는 음식 이름 검색 설정을 진행한 뒤, 적절한 문자를 입력해 검색을 진행.
+또한 음식종류, 조리 방법의 이미지를 클릭해 음식 종류나 조리 방법에 따라 분류된 레시피를 검색해 찾아 볼 수 있음.
+   ![image](https://github.com/seulgib/2023-2-WebProgramming/assets/126848494/8ad1d75d-e0a6-4312-80a1-30b3aa1ac416)
 
-## Available Scripts
+   2-2) 로그인/회원가입 페이지
+   ![image](https://github.com/seulgib/2023-2-WebProgramming/assets/126848494/78b4257d-b507-47e3-af00-26bcd544f1ad)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
